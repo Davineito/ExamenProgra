@@ -18,6 +18,7 @@ public class Product {
     @Temporal(TemporalType.DATE)
     private Date createdAt;
 
+//geter and setter
     public Long getId() {
         return id;
     }

@@ -18,6 +18,7 @@ public class Movement {
     @Temporal(TemporalType.DATE)
     private Date createdAt;
 
+    //geter and setter
     public Long getUserid() {
         return userid;
     }
