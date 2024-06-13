@@ -5,20 +5,20 @@ import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "users")
-public class Product {
+@Table(name = "agenda")
+public class Agenda {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
-    private String email;
-    private Integer password;
-
-    @Column(name = "created_at")
+    private String nombre;
+    private String agenda;
+    private Long año;
+    @Column(name ="created_at")
     @Temporal(TemporalType.DATE)
     private Date createdAt;
+//obtenedores
 
-//geter and setter
     public Long getId() {
         return id;
     }
@@ -27,28 +27,28 @@ public class Product {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getAgenda() {
+        return agenda;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAgenda(String agenda) {
+        this.agenda = agenda;
     }
 
-    public String getEmail() {
-        return email;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public Integer getPassword() {
-        return password;
+    public Long getAño() {
+        return año;
     }
 
-    public void setPassword(Integer password) {
-        this.password = password;
+    public void setAño(Long año) {
+        this.año = año;
     }
 
     public Date getCreatedAt() {
